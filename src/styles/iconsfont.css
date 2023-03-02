@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('./../assets/fonts/icons.ttf?q2ic9x') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-arrow-top:before {
+  content: "\e900";
+  color: #fff;
+}
+._icon-explore-fill:before {
+  content: "\e901";
+  color: #fff;
+}
+._icon-gaming-fill:before {
+  content: "\e902";
+  color: #fff;
+}
+._icon-history-fill:before {
+  content: "\e903";
+  color: #fff;
+}
+._icon-home-fill:before {
+  content: "\e904";
+  color: #fff;
+}
+._icon-library-fill:before {
+  content: "\e905";
+  color: #fff;
+}
+._icon-liked-fill:before {
+  content: "\e906";
+  color: #fff;
+}
+._icon-live-fill:before {
+  content: "\e907";
+  color: #fff;
+}
+._icon-premium-fill:before {
+  content: "\e908";
+  color: #fff;
+}
+._icon-report-fill:before {
+  content: "\e909";
+  color: #fff;
+}
+._icon-sports-fill:before {
+  content: "\e90a";
+  color: #fff;
+}
+._icon-subscriptions-fill:before {
+  content: "\e90b";
+  color: #fff;
+}
+._icon-watchLater-fill:before {
+  content: "\e90c";
+  color: #fff;
+}
+._icon-arrowBottom:before {
+  content: "\e90d";
+  color: #fff;
+}
+._icon-explore:before {
+  content: "\e90e";
+  color: #fff;
+}
+._icon-feedback:before {
+  content: "\e90f";
+  color: #fff;
+}
+._icon-gaming:before {
+  content: "\e910";
+  color: #fff;
+}
+._icon-help:before {
+  content: "\e911";
+  color: #fff;
+}
+._icon-history:before {
+  content: "\e912";
+  color: #fff;
+}
+._icon-home:before {
+  content: "\e913";
+  color: #fff;
+}
+._icon-library:before {
+  content: "\e914";
+  color: #fff;
+}
+._icon-liked:before {
+  content: "\e915";
+  color: #fff;
+}
+._icon-live:before {
+  content: "\e916";
+  color: #fff;
+}
+._icon-play:before {
+  content: "\e917";
+  color: #fff;
+}
+._icon-premium:before {
+  content: "\e918";
+  color: #fff;
+}
+._icon-queue:before {
+  content: "\e919";
+  color: #fff;
+}
+._icon-report:before {
+  content: "\e91a";
+  color: #fff;
+}
+._icon-settings:before {
+  content: "\e91b";
+  color: #fff;
+}
+._icon-sports:before {
+  content: "\e91c";
+  color: #fff;
+}
+._icon-subscriptions:before {
+  content: "\e91d";
+  color: #fff;
+}
+._icon-watchLater:before {
+  content: "\e91e";
+  color: #fff;
+}
+._icon-yourVideos:before {
+  content: "\e91f";
+  color: #fff;
+}
+._icon-DisLiked:before {
+  content: "\e920";
+  color: #fff;
+}
+._icon-Dropdown:before {
+  content: "\e921";
+  color: #fff;
+}
+._icon-Liked:before {
+  content: "\e922";
+  color: #fff;
+}
+._icon-More:before {
+  content: "\e923";
+  color: #fff;
+}
+._icon-Save:before {
+  content: "\e924";
+  color: #fff;
+}
+._icon-Share:before {
+  content: "\e925";
+  color: #fff;
+}
+._icon-apps:before {
+  content: "\e926";
+  color: #fff;
+}
+._icon-create:before {
+  content: "\e927";
+  color: #fff;
+}
+._icon-hamburger:before {
+  content: "\e928";
+  color: #fff;
+}
+._icon-leftBottom:before {
+  content: "\e929";
+  color: #fff;
+}
+._icon-mic:before {
+  content: "\e92a";
+  color: #fff;
+}
+._icon-notifications:before {
+  content: "\e92b";
+  color: #fff;
+}
+._icon-search:before {
+  content: "\e92c";
+  color: #fff;
+}
