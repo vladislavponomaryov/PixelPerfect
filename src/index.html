@@ -2,19 +2,607 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>YouTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <!--    Bootstrap reboot -->
+    <link rel="stylesheet" href="./styles/bootstrap-reboot.min.css">
+    <!--    Add main styles-->
+    <link rel="stylesheet" href="./styles/main.sass">
+    <!--    Add media query -->
+    <link rel="stylesheet" href="./styles/media.sass">
     <!--    Add Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!--    Add main styles-->
-    <link rel="stylesheet" href="./styles/main.sass">
     <!--    Add icons font-->
-    <link rel="stylesheet" href="./styles/iconsfont.css">
+    <link rel="stylesheet" href="./styles/iconsFont.css">
+    <!--    Slider-->
+    <link rel="stylesheet" href="components/slider/style.sass">
 </head>
-<body>
-<h1>Hello world4454455</h1>
-<h1>Проверка Русского шрифта 534534535fsddfs345</h1>
-<span class="_icon-apps"></span>
+<body class="full-guide">
+
+<header>
+    <div class="start">
+        <button id="button-guide" class="icon">
+            <span class="_icon-hamburger"></span>
+        </button>
+        <a class="button-logo" href="https://www.youtube.com/">
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="Logotype Youtube">
+            </div>
+        </a>
+    </div>
+    <div class="center">
+        <div class="search">
+            <button class="button-back icon">
+                <span class="_icon-leftBottom"></span>
+            </button>
+            <div class="search-bar">
+                <input class="search-field" placeholder="Search">
+                <button class="search-button icon">
+                    <span class="_icon-search"></span>
+                </button>
+            </div>
+            <button class="button-search-micro icon">
+                <span class="_icon-mic"></span>
+            </button>
+        </div>
+    </div>
+    <nav class="end">
+        <button id="button-mobile-search" class="icon">
+            <span class="_icon-search"></span>
+        </button>
+        <button class="button-create icon">
+            <span class="_icon-create"></span>
+        </button>
+        <button class="button-apps icon">
+            <span class="_icon-apps"></span>
+        </button>
+        <button class="button-notifications icon">
+            <span class="_icon-notifications"></span>
+        </button>
+        <button class="button-user">
+            <img src="./assets/images/userAvatars/10.png" alt="User avatar">
+        </button>
+    </nav>
+</header>
+
+<div class="sidebar">
+    <nav>
+        <div class="full-guide">
+            <ul class="category">
+                <li class="active">
+                    <a href="">
+                        <span class="_icon-home-fill"></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-explore"></span>
+                        <span class="title">Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-subscriptions"></span>
+                        <span class="title">Subscriptions</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="category">
+                <li>
+                    <a href="">
+                        <span class="_icon-library"></span>
+                        <span class="title">Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-history"></span>
+                        <span class="title">History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-yourVideos"></span>
+                        <span class="title">Your Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-watchLater"></span>
+                        <span class="title">Watch Later</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-Liked"></span>
+                        <span class="title">Liked Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-arrowBottom"></span>
+                        <span class="title">Show More</span>
+                    </a>
+                </li>
+            </ul>
+            <h5>Subscriptions</h5>
+            <ul class="category">
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/9.png" alt="User avatar">
+                        <span class="title">James Gouse</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/8.png" alt="User avatar">
+                        <span class="title">Alan Cooper</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/7.png" alt="User avatar">
+                        <span class="title">Marcus Levin</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/6.png" alt="User avatar">
+                        <span class="title">Alexis Sears</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/4.png" alt="User avatar">
+                        <span class="title">Jesica Lambert</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/3.png" alt="User avatar">
+                        <span class="title">Anna White</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="./assets/images/userAvatars/2.png" alt="User avatar">
+                        <span class="title">Skylar Dias</span>
+                    </a>
+                </li>
+                <li class="hidden">
+                    <a>
+                        <img src="./assets/images/userAvatars/5.png" alt="User avatar">
+                        <span class="title">Dilan Brock</span>
+                    </a>
+                </li>
+                <li class="hidden">
+                    <a>
+                        <img src="./assets/images/userAvatars/1.png" alt="User avatar">
+                        <span class="title">Katrin Trine</span>
+                    </a>
+                </li>
+                <li class="more">
+                    <a>
+                        <span class="_icon-arrowBottom"></span>
+                        <span class="title">Show 13 more</span>
+                    </a>
+                </li>
+            </ul>
+            <h5>More from youtube</h5>
+            <ul class="category">
+                <li>
+                    <a href="">
+                        <span class="_icon-premium"></span>
+                        <span class="title">Youtube Premium</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-gaming"></span>
+                        <span class="title">Gaming</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-live"></span>
+                        <span class="title">Live</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-sports"></span>
+                        <span class="title">Sports</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="category">
+                <li>
+                    <a href="">
+                        <span class="_icon-settings"></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-report"></span>
+                        <span class="title">Report History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-help"></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-feedback"></span>
+                        <span class="title">Send feedback</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mini-guide">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="_icon-home-fill"></span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-explore"></span>
+                        Explore
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-subscriptions"></span>
+                        Subscriptions
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="_icon-library"></span>
+                        Library
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="">
+        <ul>
+            <li>
+                <a href="/about">About</a>
+                <a href="/press">Press</a>
+                <a href="/copyright">Copyright</a>
+                <a href="/contactUs">Contact us</a>
+                <a href="/creators">Creators</a>
+                <a href="/advertise">Advertise</a>
+                <a href="/developers">Developers</a>
+            </li>
+            <li>
+                <a href="/terms">Terms</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/policySafety">Policy & Safety</a>
+                <a href="/HowYouTubeWorks">How YouTube works</a>
+                <a href="/testNewFeatures">Test new features</a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+<main>
+    <header>
+        <div class="top-menu">
+            <div myslider>
+                <div class="wrapper">
+                    <ul>
+                        <li class="active">All</li>
+                        <li>Live</li>
+                        <li>UX/UI</li>
+                        <li>Music</li>
+                        <li>User Interface design</li>
+                        <li>Graphic design</li>
+                        <li>User experience design</li>
+                        <li>UI</li>
+                        <li>Interaction design</li>
+                        <li>My web components</li>
+                        <li>Web Sites</li>
+                        <!-- -->
+                        <li>Live</li>
+                        <li>UX/UI</li>
+                        <li>Music</li>
+                        <li>User Interface design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/1.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/1.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/2.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/2.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/3.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/3.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/4.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/4.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/5.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/5.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/6.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/6.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/7.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/7.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/8.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/8.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <!--        Copy-->
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/1.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/1.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/2.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/2.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/3.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/3.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/4.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/4.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/5.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/5.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/6.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/6.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/7.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/7.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <a href="/video-link">
+                <div class="image">
+                    <img src="assets/images/content/8.png" alt="Preview image">
+                    <div class="videoLength">23:45</div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <a class="account" href="/account-link"><img src="assets/images/userAvatars/8.png" alt="Account image"></a>
+                <a class="information" href="/video-link">
+                    <h4>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h4>
+                    <span class="account-name">James Gouse</span>
+                    <span>15K Views</span>
+                    <span>1 week ago</span>
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script src="components/sidebar/index.js"></script>
+<script src="components/slider/index.js"></script>
+
 </body>
 </html>

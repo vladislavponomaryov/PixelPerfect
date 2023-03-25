@@ -1,5 +1,411 @@
-$fontFamily: 'Roboto', sans-serif
+@import "variables"
 
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+button
+  outline: 0
+  border: 0
+  background: transparent
+
+//Styles
 html, body
   font-family: $fontFamily
-  background: #2B2B2B
+  font-size: 100%
+  background: $backgroundColor
+  overflow-y: auto
+
+  &::-webkit-scrollbar
+    width: 8px
+  /* ширина всей полосы прокрутки */
+
+  &::-webkit-scrollbar-track
+    background: transparent
+  /* цвет зоны отслеживания */
+
+  &::-webkit-scrollbar-thumb
+    background-color: #AAAAAA
+    /* цвет бегунка */
+    border-radius: 20px
+/* округлось бегунка */
+
+.container-fluid
+  padding: $mainMargin
+
+body
+  > header
+    display: flex
+    flex: 0 0 auto
+    width: 100%
+    position: fixed
+    top: 0
+    z-index: 10
+    padding: $mainMargin
+    background: $backgroundColor
+    justify-content: space-between
+    height: $headerHeight !important
+
+  > .sidebar
+    flex: 0 0 auto
+    padding: 0 24px 100px 24px
+    position: fixed
+    left: 0
+    top: $headerHeight
+    background: $backgroundColor
+    height: 100%
+    z-index: 9
+    overflow-y: auto
+    width: $asideWidth
+
+
+  > main
+    flex: 0 0 auto
+    min-height: calc(100vh - $headerHeight)
+    background: $black
+    z-index: 8
+    margin-left: $asideWidth
+    margin-top: $headerHeight
+    width: calc(100% - $asideWidth)
+
+  &.full-guide
+    .mini-guide
+      display: none
+  &.mini-guide
+    > main
+      margin-left: $asideMini
+      width: calc(100% - $asideMini)
+      header
+        .top-menu
+          width: calc(100% - $asideMini)
+    > .sidebar
+      width: $asideMini
+      .full-guide
+        display: none
+      footer
+        display: none
+
+
+body
+  > .sidebar
+    &::-webkit-scrollbar
+      width: 8px
+    /* ширина всей полосы прокрутки */
+
+    &::-webkit-scrollbar-track
+      background: transparent
+    /* цвет зоны отслеживания */
+
+    &::-webkit-scrollbar-thumb
+      background-color: #717171
+      /* цвет бегунка */
+      border-radius: 20px
+      /* округлось бегунка */
+      height: 50px
+      visibility: hidden
+
+    &:hover
+      &::-webkit-scrollbar-thumb
+        visibility: inherit
+
+.icon
+  display: flex
+  min-width: $iconWidth
+  min-height: $iconHeight
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+
+  &:hover
+    background: $borderColor
+    border-radius: 50%
+    cursor: pointer
+
+header
+  .start, .center, .end
+    display: flex
+    align-items: center
+
+  .center
+    &.visible
+      display: flex
+
+  .button-logo
+    .logo
+      display: flex
+      width: 120px
+      height: auto
+      min-height: 40px
+      align-items: center
+      justify-content: center
+
+  .search
+    width: 34vw
+    height: 40px
+    display: flex
+
+    .button-back
+      display: none
+
+    .button-search-micro
+      width: $iconWidth
+      height: $iconHeight
+      background: $black
+      border-radius: 50%
+
+      &:hover
+        background: $borderColor
+
+    .button-back
+      transform: rotate(180deg)
+      margin-right: 15px
+
+    .search-bar
+      display: flex
+      width: 100%
+      height: 100%
+      margin-right: 4px
+
+      .search-field
+        width: calc(100% - $searchButtonWidth)
+        background-color: $backgroundColor2
+        border: 1px solid $borderColor
+        border-radius: 2px 0 0 2px
+        color: $grayColor
+        padding: 4px 6px
+        z-index: 4
+        font-size: 1rem
+        text-transform: capitalize
+
+        &:hover, &:focus, &:active
+          outline: 1px solid $topMenuItemBorderColor
+
+      .search-button
+        display: flex
+        width: $searchButtonWidth
+        background: $borderColor
+        align-items: center
+        justify-content: center
+        border-radius: 0 2px 2px 0
+        z-index: 3
+
+  .end
+
+    #button-mobile-search, .button-search-micro
+      display: none
+
+    .button-user
+      display: flex
+      width: 60px
+      align-items: center
+      justify-content: center
+
+      img
+        width: 32px
+        height: 32px
+        border-radius: 50%
+
+.sidebar
+  .full-guide
+
+    h5
+      font-size: 0.9rem
+      font-weight: bold
+      color: $grayColor
+      text-transform: uppercase
+      padding: 20px 0 0 0
+      margin-bottom: -4px
+
+    .category
+      list-style: none
+      padding: 12px 0 12px 24px
+      border-bottom: 1px solid $borderColor
+      margin-left: -24px
+
+      li
+        a
+          display: flex
+          height: 40px
+          align-items: center
+          padding-left: 24px
+          margin-left: -24px
+
+          img
+            width: 24px
+            height: 24px
+            border-radius: 50%
+
+          &.hidden
+            display: none
+
+          .title
+            display: flex
+            font-size: 0.875rem
+            color: $whiteColor
+            margin-left: 24px
+
+          &.active
+            background: $borderColor
+
+          &:hover
+            cursor: pointer
+            background: $borderColor
+
+  .mini-guide
+    margin-top: 4px
+    ul
+      display: flex
+      flex-direction: column
+      li
+        a
+          display: flex
+          padding: 16px 0 14px
+          flex-direction: column
+          align-items: center
+          box-sizing: border-box
+          font-size: 0.625rem
+          color: $whiteColor
+          span
+            margin-bottom: 4px
+
+  footer
+    padding: 16px
+    &.hidden
+      display: none
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        line-height: 1.2
+        margin-left: $-mainMarginLeft
+        margin-bottom: 16px
+
+        a
+          font-size: 0.8125rem
+          font-weight: bold
+          color: $grayColor
+
+main
+  header
+    height: $headerHeight + 2
+    width: 100%
+
+    .top-menu
+      display: flex
+      align-items: center
+      width: calc(100% - $asideWidth)
+      position: fixed
+      top: $headerHeight
+      height: $headerHeight + 2
+      border: 1px solid $borderColor
+      border-left: 0
+      border-right: 0
+      z-index: 7
+      background: $backgroundColor
+      ul
+        height: 100%
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
+
+        li
+          display: flex
+          align-items: center
+          color: $whiteColor
+          font-size: 0.875rem
+          padding: 0 12px
+          border-radius: 32px
+          height: 32px
+          background: $borderColor
+          border: 1px solid $topMenuItemBorderColor
+          margin: 0 6px
+
+          &.active, &.active:hover
+            background: $whiteColor
+            color: $borderColor
+
+          &:hover
+            background: $topMenuItemBorderColor
+            transition: 0.3s
+            cursor: pointer
+
+  .content
+    padding: 24px 16px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    section
+      flex: 1 0 250px
+      max-width: 320px
+      margin: 0 8px 40px 8px
+
+      &:hover
+        cursor: pointer
+
+      .image
+        max-height: inherit
+        overflow: hidden
+        position: relative
+
+        img
+          width: 100%
+          height: auto
+
+        .videoLength
+          position: absolute
+          right: 0
+          bottom: 0
+          margin: 5px
+          background: rgba(0, 0, 0, 0.8)
+          font-size: 0.625rem
+          color: $whiteColor
+          padding: 2px 4px
+          border-radius: 3px
+
+      .wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        padding-top: 12px
+
+        .account
+          padding-right: 12px
+
+          img
+            width: 36px
+            height: 36px
+            border-radius: 50%
+
+        a
+          flex: 0 0 auto
+          &.information
+            width: calc(100% - 48px)
+
+          h4
+            color: $whiteColor
+            font-size: 0.75rem
+            font-weight: bold
+            padding-bottom: 5px
+            line-height: 1.4
+
+          a, span
+            font-size: 0.75rem
+            color: $grayColor
+            line-height: 1.2
+
+          a
+            text-transform: capitalize
+
+          span
+            display: inline-block
+            line-height: 0
+            &.account-name
+              display: block
+            //position: relative
+            //margin-top: -3px
+            //margin-bottom: 0

@@ -1,0 +1,122 @@
+@import "variables"
+
+// Работает до 1348
+@media screen and (max-width: 1348px)
+  $asideMini: 72px
+
+  body
+    header
+      background: $backgroundColor3
+      border-bottom: 1px solid $borderColor
+      #button-guide
+        display: none
+      .search
+        .button-search-micro
+          background: $backgroundColor
+    .sidebar
+      width: $asideMini
+      background: $backgroundColor3
+      nav
+        .full-guide
+          display: none
+      >footer
+        display: none
+    main
+      width: calc(100% - $asideMini)
+      margin-left: $asideMini
+      background: $backgroundColor3
+      header
+        display: none
+    &.full-guide
+      .aside
+        display: none
+      main
+        margin-left: 0
+        width: 100%
+
+// Работает до 792
+@media screen and (max-width: 792px)
+  $asideWidth: 0
+  $navigationHeight: 48px
+
+  html
+    font-size: 110%
+
+  body
+    >header
+      .center
+        display: none
+        position: fixed
+        justify-content: center
+        align-items: center
+        left: 0
+        top: 0
+        height: $headerHeight
+        width: 100%
+        z-index: 11
+        background: $backgroundColor
+        padding: 0 15px
+        .search
+          width: 100%
+          .button-back
+            display: flex
+          .search-bar
+            margin-right: 15px
+          .button-search-micro
+            background: $borderColor
+      .end
+        #button-mobile-search
+          display: flex
+        .button-create, .button-apps, .button-notifications
+          display: none
+    &.mini-guide
+      .sidebar
+        bottom: 0
+        top: inherit
+        width: 100%
+        border-top: 1px solid $borderColor
+        height: auto
+        padding: 0
+        nav
+          .mini-guide
+            margin-top: 0
+            ul
+              flex-direction: row
+              align-items: center
+              li
+                flex: 0 0 25%
+                a
+                  padding: 0
+                  height: $navigationHeight
+                  display: flex
+                  justify-content: center
+                  span
+                    margin: 0
+                    position: relative
+                    top: 2px
+      main
+        margin-left: $asideWidth
+        width: 100%
+
+// Работает до 600
+@media screen and (max-width: 600px)
+
+  body
+    main
+      .content
+        section
+          flex: 1 0 100%
+          max-width: inherit
+          .wrapper
+            a
+              line-height: 1
+              h4
+                margin: 0
+                padding: 0
+              span
+                display: inline-block !important
+                &:after
+                  content: ' •'
+                &:last-child
+                  &:after
+                    content: ''
