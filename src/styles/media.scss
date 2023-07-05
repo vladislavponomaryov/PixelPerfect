@@ -90,6 +90,13 @@
       }
 
       .rightContent {
+        .titleModule,
+        .priceModule,
+        .productParams,
+        .basketModule,
+        .productActions {
+          padding: 16px 0px;
+        }
         .productParams {
           form {
             .styled-select {

@@ -68,6 +68,7 @@ body > header {
     position: relative;
     flex: 1 1 auto;
     justify-content: flex-end;
+    margin-right: 5px;
 
     .menu {
       display: flex;
@@ -179,10 +180,13 @@ main {
       .productParams,
       .basketModule,
       .productActions {
-        padding: 16px 0;
+        padding: 16px 20px;
       }
 
       .titleModule {
+        margin-top: 8px;
+        padding-bottom: 8px;
+
         .title {
           font-weight: 600;
           font-size: 18px;
@@ -190,20 +194,23 @@ main {
         }
 
         .productId {
+          display: inline-block;
           color: $grayDark;
           font-size: 12px;
+          margin-top: 7px;
         }
 
         .reviews {
           display: flex;
-          padding: 10px 0;
+          padding: 12px 0;
           align-items: center;
           font-size: 14px;
 
           .rating {
-            padding: 0 10px;
-            position: relative;
-            top: -2px;
+            display: flex;
+            align-items: center;
+            margin-left: 13px;
+            margin-right: 5px;
           }
         }
       }
@@ -212,7 +219,7 @@ main {
         .price {
           display: flex;
           align-items: center;
-          margin-bottom: 8px;
+          margin-bottom: 4px;
 
           .actual {
             font-weight: bold;
@@ -244,11 +251,10 @@ main {
 
       .productParams {
         form {
-          margin-top: 1px;
-          margin-bottom: 5px;
+          margin-bottom: 0;
 
           .styled-select {
-            min-width: 300px;
+            min-width: 313px;
             height: 44px;
             overflow: hidden;
             overflow: -moz-hidden-unscrollable;
@@ -271,7 +277,7 @@ main {
             position: absolute;
             left: 0;
             top: 0;
-            padding: 0 8px;
+            padding: 0 15px;
             color: $black;
             -webkit-text-fill-color: $black;
 
@@ -284,12 +290,14 @@ main {
       }
 
       .basketModule {
+        padding-bottom: 10px;
         .basketActions {
           display: flex;
+          margin-top: 7px;
 
           .counter {
             display: flex;
-            margin-right: 12px;
+            margin-right: 14px;
             color: $black;
             -webkit-text-fill-color: $black;
 
@@ -298,6 +306,7 @@ main {
               font-size: 14px;
               border: 0;
               width: 44px;
+              height: 44px;
               color: $black;
               -webkit-text-fill-color: $black;
 
@@ -313,7 +322,7 @@ main {
               background: $grayLight;
               border-left: 1px solid $grayMiddle;
               border-right: 1px solid $grayMiddle;
-              width: 50px;
+              width: 53px;
               height: 44px;
             }
           }
@@ -323,6 +332,8 @@ main {
             border: 0;
             color: $white;
             height: 44px;
+            font-size: 13px;
+            letter-spacing: 1.1px;
 
             &:hover {
               background: $grayMiddle;
@@ -330,7 +341,6 @@ main {
           }
 
           .addToBasket {
-            margin-right: 4px;
             padding-left: 28px;
             padding-right: 28px;
           }
@@ -338,6 +348,8 @@ main {
           .addToFavorite {
             padding-left: 10px;
             padding-right: 10px;
+            position: relative;
+            top: -1px;
 
             img {
               filter: invert(99%) sepia(60%) saturate(0%) hue-rotate(39deg) brightness(108%) contrast(100%);
@@ -348,13 +360,16 @@ main {
 
         u {
           display: inline-block;
-          margin-top: 12px;
+          margin-top: 8px;
         }
       }
 
       .productActions {
+        padding-top: 5px;
         .action {
-          margin-bottom: 3px;
+          font-size: 16px;
+          margin-bottom: 6px;
+          letter-spacing: 0.5px;
         }
       }
 
@@ -363,6 +378,8 @@ main {
 }
 
 footer {
+  margin-top: 93px;
+
   .content {
     display: flex;
 
