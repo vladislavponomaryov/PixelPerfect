@@ -256,6 +256,8 @@ main {
             border: 1px double $black;
             display: inline-block;
             position: relative;
+            color: $black;
+            -webkit-text-fill-color: $black;
           }
 
           .styled-select select {
@@ -269,7 +271,14 @@ main {
             position: absolute;
             left: 0;
             top: 0;
-            padding: 0 8px
+            padding: 0 8px;
+            color: $black;
+            -webkit-text-fill-color: $black;
+
+            option {
+              color: $black;
+              -webkit-text-fill-color: $black;
+            }
           }
         }
       }
@@ -281,12 +290,16 @@ main {
           .counter {
             display: flex;
             margin-right: 12px;
+            color: $black;
+            -webkit-text-fill-color: $black;
 
             button {
               background: $grayLight;
               font-size: 14px;
               border: 0;
               width: 44px;
+              color: $black;
+              -webkit-text-fill-color: $black;
 
               &:hover {
                 background: $grayMiddle;
@@ -409,6 +422,8 @@ footer {
                 border: 0;
                 border-bottom: 1px solid $grayMiddle;
                 margin: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
 
                 &::-webkit-search-cancel-button {
                   background: red;
@@ -432,6 +447,8 @@ footer {
             float: right;
             font-size: 14px;
             padding: 8px 28px;
+            color: $grayDark;
+            -webkit-text-fill-color: $grayDark;
           }
         }
       }
