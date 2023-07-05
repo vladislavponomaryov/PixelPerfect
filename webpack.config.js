@@ -37,7 +37,7 @@ module.exports = {
 
     module: {
         rules: [
-            { test: /\.(html)$/, use: ['html-loader'] },
+            {test: /\.(html)$/, use: ['html-loader']},
             {
                 test: /\.(s[ac]|c)ss$/i,
                 use: [
