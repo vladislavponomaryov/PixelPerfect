@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladislavponomaryov/youtube.git"
+    "url": "git+https://github.com/vladislavponomaryov/Test_job_layout"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vladislavponomaryov/youtube/issues"
+    "url": "https://github.com/vladislavponomaryov/Test_job_layout/issues"
   },
-  "homepage": "https://github.com/vladislavponomaryov/youtube#readme",
+  "homepage": "https://github.com/vladislavponomaryov/Test_job_layout#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-loader": "^4.2.0",

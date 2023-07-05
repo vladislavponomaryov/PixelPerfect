@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=document.getElementById("openButton"),t=document.getElementById("closeButton"),n=document.getElementById("mobileMenu");e&&t&&n&&(e.addEventListener("click",(e=>{e.stopPropagation(),n.classList.add("active")})),t.addEventListener("click",(e=>{e.stopPropagation(),n.classList.remove("active")})))}));
