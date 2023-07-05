@@ -20,6 +20,10 @@ span, u, s {
   font-size: 14px;
 }
 
+hr {
+  color: $grayMiddle;
+}
+
 u {
   &:hover {
     cursor: pointer;
@@ -418,7 +422,7 @@ footer {
         h4 {
           text-transform: uppercase;
           font-size: 16px;
-          margin-bottom: 40px;
+          margin-bottom: 30px;
         }
 
         form {
@@ -429,7 +433,7 @@ footer {
             display: flex;
 
             input {
-              font-size: 14px;
+              font-size: 13px;
               padding-bottom: 4px;
 
               &[type='search'] {
@@ -439,6 +443,7 @@ footer {
                 border: 0;
                 border-bottom: 1px solid $grayMiddle;
                 margin: 0;
+                padding: 0 15px 10px;
                 background: transparent;
                 border-radius: 0;
                 -webkit-border-radius: 0;
@@ -462,11 +467,12 @@ footer {
           input[type='submit'] {
             border: 1px solid $grayDark;
             background: transparent;
-            margin-top: 30px;
+            margin-top: 23px;
             float: right;
             font-size: 14px;
             padding: 8px 28px;
             color: $grayDark;
+            margin-right: 10px;
             -webkit-text-fill-color: $grayDark;
           }
         }
