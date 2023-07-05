@@ -1,0 +1,150 @@
+@import "variables";
+
+// Работает до 1348
+@media screen and (max-width: 900px) {
+  main {
+    .content {
+      padding: 0;
+
+      .product {
+
+        .leftContent {
+          .slider {
+
+            ul {
+              li {
+                img {
+                  width: 40px;
+                }
+              }
+            }
+          }
+        }
+
+        .rightContent {
+          padding: 0 $contentWidthPadding;
+
+          .basketModule {
+            .basketActions {
+              flex-direction: column;
+
+              .counter {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .content {
+      .subscribe {
+        justify-content: flex-end;
+
+        > div {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    padding-bottom: 60px;
+
+    > header {
+      box-shadow: none;
+
+      .end {
+        .menu {
+          li {
+            &:last-child {
+              display: block;
+            }
+          }
+        }
+
+        #mobileMenu {
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .product {
+      flex-direction: column;
+
+      .leftContent, .rightContent {
+        flex: 1 1 100%;
+        margin: 0;
+      }
+
+      .leftContent {
+        padding: 0;
+      }
+
+      .rightContent {
+        .productParams {
+          form {
+            .styled-select {
+              min-width: 259px;
+
+              select {
+                min-width: 259px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .content {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .navigation {
+        width: 100%;
+
+        section {
+          justify-content: flex-start;
+        }
+      }
+
+      .subscribe {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 38px;
+
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    .product {
+
+      .rightContent {
+        .productParams {
+          form {
+            select {
+              min-width: auto;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
